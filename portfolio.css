@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#020f2d;
+    color:white;
+}
+
+.container{
+    width:1200px;
+    padding:30px;
+    border-radius:25px;
+
+    display:flex;
+    gap:25px;
+
+    background:rgba(10,20,50,0.5);
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+    0 0 30px rgba(0,140,255,0.15);
+}
+
+.left-card{
+    width:330px;
+    padding:25px;
+    border-radius:20px;
+    background:#061530;
+    text-align:center;
+}
+
+.profile-img{
+    width:150px;
+    height:150px;
+    margin:auto;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+    135deg,
+    #3d5afe,
+    #7c6cff);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:50px;
+    font-weight:bold;
+}
+
+.left-card h2{
+    margin-top:20px;
+}
+
+.left-card p{
+    color:#9fb3d1;
+}
+
+.tags{
+    margin-top:20px;
+}
+
+.tags span{
+    display:inline-block;
+    padding:8px 14px;
+    margin:5px;
+    border-radius:20px;
+    background:#0d234d;
+}
+
+.info-box{
+    margin-top:15px;
+    padding:15px;
+    border-radius:15px;
+    background:#112140;
+}
+
+.info-box h4{
+    margin-bottom:5px;
+}
+
+.footer-text{
+    margin-top:25px;
+    color:#9fb3d1;
+}
+
+.right-card{
+    flex:1;
+    padding:25px;
+    border-radius:20px;
+    background:#061530;
+}
+
+.top-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.sub{
+    color:#8ea2c4;
+}
+
+.education{
+    text-align:right;
+}
+
+.about-text{
+    margin-top:25px;
+    line-height:1.8;
+    color:#d3dded;
+}
+
+.right-card h2{
+    margin-top:30px;
+    margin-bottom:15px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skills span{
+    padding:10px 15px;
+    border-radius:12px;
+    background:#0d234d;
+}
+
+ul{
+    margin-left:20px;
+    line-height:2;
+    color:#cfd9ea;
+}
+
+.buttons{
+    margin-top:25px;
+}
+
+.primary{
+    padding:12px 25px;
+    border:none;
+    border-radius:12px;
+    background:#4e6cff;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.secondary{
+    padding:12px 25px;
+    margin-left:10px;
+    border:1px solid #4e6cff;
+    border-radius:12px;
+    background:transparent;
+    color:#4e6cff;
+    cursor:pointer;
+}

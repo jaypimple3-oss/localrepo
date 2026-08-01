@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(
+        135deg,
+        #ff6b00,
+        #ff2d55,
+        #7b2ff7
+    );
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:700;
+}
+
+.signin-btn{
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.signin-btn:hover{
+    transform:translateY(-2px);
+}
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+    gap:60px;
+}
+
+.left{
+    flex:1;
+}
+
+/* Mavens.Dev Button */
+.product-btn{
+    background:rgba(255,255,255,0.15);
+    color:white;
+
+    border:1px solid rgba(255,255,255,0.25);
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    font-size:0.9rem;
+    font-weight:600;
+
+    cursor:pointer;
+
+    backdrop-filter:blur(12px);
+
+    transition:all .3s ease;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+.product-btn:hover{
+    transform:translateY(-3px);
+
+    background:rgba(255,255,255,0.25);
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.25);
+}
+
+.left h1{
+    font-size:4rem;
+    margin:25px 0;
+    line-height:1.1;
+}
+
+.left p{
+    max-width:600px;
+    line-height:1.8;
+    opacity:.9;
+    font-size:1.05rem;
+}
+
+.stats{
+    display:flex;
+    gap:50px;
+    margin-top:40px;
+}
+
+.stats h2{
+    font-size:2rem;
+}
+
+.stats span{
+    opacity:.8;
+}
+
+.right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    width:420px;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    box-shadow:0 8px 30px rgba(0,0,0,0.2);
+}
+
+.card h2{
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.card input{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+
+    border:none;
+    outline:none;
+
+    border-radius:12px;
+
+    font-size:1rem;
+}
+
+.card input::placeholder{
+    color:#777;
+}
+
+.card button{
+    width:100%;
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:1rem;
+    font-weight:600;
+
+    color:white;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+        135deg,
+        #ff6b00,
+        #ff2d55
+    );
+
+    transition:.3s;
+}
+
+.card button:hover{
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(255,45,85,.4);
+}
+
+@media(max-width:900px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:40px 8%;
+    }
+
+    .left h1{
+        font-size:3rem;
+    }
+
+    .stats{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .card{
+        width:100%;
+        max-width:420px;
+    }
+}
